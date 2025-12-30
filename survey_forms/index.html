@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Surbey Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Qual a Linguagem preferida entre os programadores?</p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label" >Nome</label>
+            <input type="text" id="name" required placeholder="Digite seu nome">
+        <label for="email" id="email-label">Email</label>
+            <input id="email" required type="email" name="email" placeholder="Digite seu Email">
+        <label for="number" id="number-label">Número de telefone</label>
+            <input id='number' min="10" max="99" 
+            name="number" placeholder="Digite seu número" type="number">
+        <label class="dropdown" for="dropdown">Linguagem Preferida
+        </label>
+        <select name="" id="dropdown"> 
+            <option value="0" name="">(Selecione uma opção)</option>
+            <option value="1" name="">Python</option>
+            <option value="2" name="">Java</option>
+            <option value="3" name="">C</option>
+            <option value="4" name="">JavaScript</option>
+        </select>
+        <label for="comments">Digite o motivo</label>
+        <textarea name="comments" required id="comments" placeholder="ex: Eu acho mais fácil de se usar"></textarea>
+        <p>Quantas linguagens você domina?</p>
+            <label class="lang-inline">Apenas 1       
+            <input type="radio" required value="0" name="lang"></label> 
+            <label class="lang-inline">Apenas 2
+            <input type="radio" value="1"name="lang"></label> 
+            <label class="lang-inline">3 ou mais
+            <input type="radio" value="2"name="lang"></label> 
+
+
+        <p>Qual a área de atuação de sua preferência?</p>   
+        <label for="area" class="area-inline">
+            <input type="radio" name="area" id="area" value="front">Front-End
+        </label>
+        <label for="area" class="area-inline">
+            <input type="radio" name="area" required id="area" value="back">Back-End
+        </label>
+        <label  class="area-inline"for="area">
+            <input type="radio" name="area" required id="area" value="full">Full-Stack
+        </label>
+        <label class="area-inline"for="area">
+            <input type="radio" name="area" required id="area" value="data">Data Base
+        </label>
+
+        <section>
+            <p id="terms">Termos e condições</p>
+            <label for="value">
+                <input class="checkbox" type="checkbox" id="value" name="option 1" required value="0"> Aceito os termos e condições
+            </label>
+            <label  for="value"> 
+                <input class="checkbox" type="checkbox" id="value" name="option 1" value="1">Me enviar email sobre os resultados
+            </label>
+        </section>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>

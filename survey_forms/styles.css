@@ -1,0 +1,42 @@
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10% ;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: #1e1e1e;
+    width: 100%;
+    border-bottom: 4px solid aliceblue;
+
+}
+form{
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+input,
+textarea,
+select {
+  margin: 5px;
+  width: 100%;
+  min-height: 2em;
+}
+.lang-inline, .area-inline{
+    display: inline-block;
+}
+section{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.checkbox{
+    display:grid;
+}
+#terms p{
+    height: 10px;
+}
